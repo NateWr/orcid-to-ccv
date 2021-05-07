@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                margin: 0 1rem;
+            }
+            .container {
+                max-width: 40em;
+                margin: 2rem auto;
+            }
+            #errors {
+                margin: 1rem 0;
+            }
+            #errors:not(:empty) {
+                padding: 1rem;
+                background: red;
+                color: white;
+            }
+            #errors p:first-child {
+                margin-top: 0;
+            }
+            #errors p:last-child {
+                margin-bottom: 0;
+            }
+            textarea {
+                padding: 0.5rem;
+                width: 100%;
+                height: 40em;
+                margin-bottom: 1rem;
+                white-space: pre;
+                text-overflow: scroll;
+            }
+            .buttons button {
+                margin-right: 0.5rem;
+            }
+            #copy,
+            #copied {
+                display: none;
+            }
+            .what {
+                margin-top: 4rem;
+                text-align: center;
+            }
+            .what a {
+                margin-right: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ORCID-to-CCV Converter</h1>
+            <label for="input">Enter the ORCID Export</label>
+            <div id="errors"></div>
+            <textarea id="input"></textarea>
+            <div class="buttons">
+                <button id="submit">Convert</button>
+                <button id="copy">Copy</button>
+                <span id="copied" aria-live="polite">✔ Copied</span>
+            </div>
+            <p class="what">
+                <a href="https://www.notion.so/ORCID-to-CCV-7cfb24c9f13c4d869cd2beb950e9e2e2">What is this for?</a>
+                <a href="https://github.com/NateWr/orcid-to-ccv">Who made this?</a>
+            </p>
+        </div>
+        <script type="text/javascript" src="convert.js"></script>
+    </body>
+</html>
