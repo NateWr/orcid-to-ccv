@@ -55,7 +55,7 @@ function convert(str) {
                 }
             });
         output += metadata.join("\n\t");
-        output += end;
+        output += "\n" + end;
 
         entries.push(output);
     });
