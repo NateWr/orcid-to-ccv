@@ -4,6 +4,8 @@ Convert an ORCID export of bibliographic entries to a BIBTEX format that can be 
 
 Inspired by @AhemNason's [tweet](https://twitter.com/AhemNason/status/1390732724437143557) and [documentation](https://www.notion.so/ORCID-to-CCV-7cfb24c9f13c4d869cd2beb950e9e2e2).
 
+[Use it](https://natewr.github.io/orcid-to-ccv/)
+
 ## Example
 
 This was not tested much. It works for the following example ORCID export entries.
