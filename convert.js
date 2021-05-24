@@ -1,5 +1,6 @@
 const $el = {
     errors: document.getElementById('errors'),
+    success: document.getElementById('success'),
     input: document.getElementById('input'),
     submit: document.getElementById('submit'),
     copy: document.getElementById('copy'),
@@ -65,6 +66,8 @@ function convert(str) {
         return;
     }
 
+    showSuccess(entries.length);
+
     $el.input.value = entries.join("\n\n");
     $el.copy.setAttribute('style', 'display:inline-block');
 }
@@ -75,6 +78,10 @@ function showErrors(errors) {
         $error.innerHTML = error;
         $el.errors.appendChild($error);
     });
+}
+
+function showSuccess(count) {
+    $el.success.innerHTML = 'Found and converted ' + count + ' entries.';
 }
 
 function copy() {
